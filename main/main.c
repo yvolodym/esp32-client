@@ -54,7 +54,7 @@ static void wifi_init(void)
     ESP_ERROR_CHECK(esp_wifi_set_channel(ESPNOW_WIFI_CHANNEL, WIFI_SECOND_CHAN_NONE));
     
     // Long Range Mode für bessere Reichweite (optional)
-    ESP_ERROR_CHECK(esp_wifi_set_protocol(ESPNOW_WIFI_IF, WIFI_PROTOCOL_11B|WIFI_PROTOCOL_11G|WIFI_PROTOCOL_11N|WIFI_PROTOCOL_LR));
+    ESP_ERROR_CHECK(esp_wifi_set_protocol(ESP_IF_WIFI_STA, WIFI_PROTOCOL_11B|WIFI_PROTOCOL_11G|WIFI_PROTOCOL_11N|WIFI_PROTOCOL_LR));
     
     ESP_LOGI(TAG, "WiFi initialisiert, Kanal: %d", ESPNOW_WIFI_CHANNEL);
 }
@@ -78,7 +78,7 @@ static esp_err_t espnow_init(void)
     esp_now_peer_info_t peer;
     memset(&peer, 0, sizeof(esp_now_peer_info_t));
     peer.channel = ESPNOW_WIFI_CHANNEL;
-    peer.ifidx = ESPNOW_WIFI_IF;
+    peer.ifidx = ESP_IF_WIFI_STA;
     peer.encrypt = false;
     memcpy(peer.peer_addr, server_mac, 6);
     
