@@ -1,9 +1,3 @@
-```bash
-git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git
-cd ESP8266_RTOS_SDK
-./install.sh
-. ./export.sh
-```
 
 ```bash
 idf.py set-target esp32-c3
@@ -16,16 +10,18 @@ ESP-NOW spezifisch:
 CONFIG_ESPNOW_ENABLE=y - ESP-NOW aktiviert
 CONFIG_ESPNOW_MAX_ENCRYPT_PEER_NUM=6 - Max. verschlüsselte Peers
 
-WiFi Konfiguration:
+Wichtige ESP32-C3 spezifische Einstellungen:
 
-Station Mode aktiv
-2MB Flash
-115200 Baud für Monitor
-NVS aktiviert
+Ändere die server_mac Variable mit der MAC-Adresse deines Servers
+Beide Geräte müssen auf Kanal 1 sein (oder ändere ESPNOW_WIFI_CHANNEL)
 
-Wichtige Parameter:
+Single-Core (UNICORE) - C3 hat nur einen Core
+RISC-V Architektur
+Optimierte IRAM-Nutzung für WiFi
+WPA3 Support aktiviert
 
-Main Task Stack: 3584 Bytes
-WiFi PPT Task Stack: 5120 Bytes
-TCP Connections: 5 aktive, 5 listening
-Log Level: INFO
+Die Konfiguration ist optimiert für:
+
+Niedrigen Stromverbrauch
+Gute WiFi-Performance
+ESP-NOW Kommunikation
