@@ -1,5 +1,12 @@
 ```bash
-idf.py set-target esp8266
+git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git
+cd ESP8266_RTOS_SDK
+./install.sh
+. ./export.sh
+```
+
+```bash
+idf.py set-target esp32-c3
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
 ```
