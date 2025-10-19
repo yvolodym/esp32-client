@@ -25,3 +25,7 @@ Die Konfiguration ist optimiert für:
 Niedrigen Stromverbrauch
 Gute WiFi-Performance
 ESP-NOW Kommunikation
+
+### URL
+* https://github.com/EzerLonginus/CH340E_USB_UART
+* https://community.element14.com/technologies/open-source-hardware/b/blog/posts/ch340-building-yet-another-usb-c-to-uart-adapter-board
