@@ -1034,7 +1034,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_USB:CH340E"
+		(symbol "Interface_USB:CH340C"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1047,7 +1047,7 @@
 					(justify right)
 				)
 			)
-			(property "Value" "CH340E"
+			(property "Value" "CH340C"
 				(at 1.27 13.97 0)
 				(effects
 					(font
@@ -1056,8 +1056,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:MSOP-10_3x3mm_P0.5mm"
-				(at 1.27 -13.97 0)
+			(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+				(at -18.542 30.226 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1066,8 +1066,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.mpja.com/download/35227cpdata.pdf"
-				(at -8.89 20.32 0)
+			(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Jiangsu-Qin-Heng-CH340C_C84681.pdf"
+				(at -6.604 33.274 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1075,8 +1075,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB serial converter, UART, MSOP-10"
-				(at 0 0 0)
+			(property "Description" "USB serial converter, crystal-less, UART, SOIC-16"
+				(at -1.524 36.068 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1093,7 +1093,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MSOP*3x3mm*P0.5mm*"
+			(property "ki_fp_filters" "SOIC*3.9x9.9mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1102,7 +1102,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "CH340E_0_1"
+			(symbol "CH340C_0_1"
 				(rectangle
 					(start -7.62 12.7)
 					(end 7.62 -12.7)
@@ -1115,7 +1115,25 @@
 					)
 				)
 			)
-			(symbol "CH340E_1_1"
+			(symbol "CH340C_1_1"
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "R232"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -1126,7 +1144,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1144,7 +1162,45 @@
 							)
 						)
 					)
-					(number "2"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 -7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1162,7 +1218,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1180,7 +1236,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1198,7 +1254,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1216,7 +1272,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1234,7 +1290,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1252,7 +1308,61 @@
 							)
 						)
 					)
-					(number "5"
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~{DSR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~{RI}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~{DCD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1263,14 +1373,14 @@
 				(pin output line
 					(at 10.16 -7.62 180)
 					(length 2.54)
-					(name "TNOW"
+					(name "~{DTR}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1288,7 +1398,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3842,7 +3952,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_USB:CH340E")
+		(lib_id "Interface_USB:CH340C")
 		(at 120.65 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3850,8 +3960,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9bb30cd-2000-4efc-bb8f-6cdaa6892cf8")
-		(property "Reference" "U4"
+		(uuid "aa987f2e-e7d4-4408-8901-f5c51f81a6ca")
+		(property "Reference" "U?"
 			(at 122.7933 123.19 0)
 			(effects
 				(font
@@ -3860,7 +3970,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CH340E"
+		(property "Value" "CH340C"
 			(at 122.7933 125.73 0)
 			(effects
 				(font
@@ -3869,8 +3979,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:MSOP-10_3x3mm_P0.5mm"
-			(at 121.92 121.92 0)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 102.108 77.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3879,8 +3989,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mpja.com/download/35227cpdata.pdf"
-			(at 111.76 87.63 0)
+		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Jiangsu-Qin-Heng-CH340C_C84681.pdf"
+			(at 114.046 74.676 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3888,49 +3998,67 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB serial converter, UART, MSOP-10"
-			(at 120.65 107.95 0)
+		(property "Description" "USB serial converter, crystal-less, UART, SOIC-16"
+			(at 119.126 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "5"
-			(uuid "d5efe96c-1256-4863-bd20-8304dd4c41d5")
-		)
-		(pin "4"
-			(uuid "092926cd-d8b0-4c54-b3a7-6f4501b814b8")
-		)
-		(pin "8"
-			(uuid "ed299840-912a-4f3c-832c-ba3e6b338c58")
-		)
-		(pin "2"
-			(uuid "e1522596-6f7f-4604-b060-a7cd5a9552a2")
 		)
 		(pin "1"
-			(uuid "09b67b8e-30be-41cd-ac7e-22b3552c5ef7")
-		)
-		(pin "3"
-			(uuid "c1a91397-c566-4adf-add4-a436b29eddcb")
-		)
-		(pin "10"
-			(uuid "a8134e7c-0aa7-427d-b55d-7c9c2e49bf3b")
+			(uuid "0a0edd27-2702-415c-be23-093e757f4b1c")
 		)
 		(pin "6"
-			(uuid "8d725f98-0e33-4add-bf85-65eb01b42223")
+			(uuid "900563b4-b7f2-43f7-bc27-3dd66b6c4860")
+		)
+		(pin "14"
+			(uuid "2369b458-64a6-4c8c-be25-9870bf19f6fd")
+		)
+		(pin "13"
+			(uuid "752f5643-ddfe-4e82-8cab-8da755d3f28d")
+		)
+		(pin "12"
+			(uuid "29c8fe43-23cf-406d-a55c-51ce0549537d")
+		)
+		(pin "4"
+			(uuid "88c8c65f-ae87-4a80-841d-9026fea599c6")
+		)
+		(pin "5"
+			(uuid "bd4d2d1a-d55d-4396-b9b7-f6c7840206ea")
+		)
+		(pin "8"
+			(uuid "7acbfed7-c55e-4892-baa7-47a9c7b93679")
+		)
+		(pin "16"
+			(uuid "9fe532c4-e994-4ef5-b011-09ac8ca96751")
+		)
+		(pin "11"
+			(uuid "5e25ac64-de03-4abc-a141-9132d502a080")
+		)
+		(pin "2"
+			(uuid "462683dc-14ac-4512-ad48-e3f4ee45edea")
+		)
+		(pin "10"
+			(uuid "605ff199-1383-4111-ae7e-90f2447a2cf8")
+		)
+		(pin "3"
+			(uuid "53756aff-96dc-4887-a900-9478a731170e")
 		)
 		(pin "7"
-			(uuid "c57969ac-54eb-4a76-98c3-3fa637f4b76b")
+			(uuid "8db4eb32-7a13-44ee-94ae-dfad77aabbae")
 		)
 		(pin "9"
-			(uuid "2876a1aa-3e54-4bb7-a89b-3c4389d2f2bc")
+			(uuid "d3cb651e-fd55-4679-8663-e1f096a405d4")
+		)
+		(pin "15"
+			(uuid "5143da2d-e970-4da5-b0cf-640dd8b5c174")
 		)
 		(instances
 			(project ""
 				(path "/4a001952-2620-48e5-963e-8cfcd99c6e64/2cbfe13a-317f-4d7e-9177-61c47456d51b"
-					(reference "U4")
+					(reference "U?")
 					(unit 1)
 				)
 			)
