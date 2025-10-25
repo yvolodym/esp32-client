@@ -2,5 +2,5 @@ build/
 target/
 *.old
 **/*-backups
-
+kicad/jlcpcb/
 
