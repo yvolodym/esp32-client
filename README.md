@@ -26,6 +26,15 @@ Niedrigen Stromverbrauch
 Gute WiFi-Performance
 ESP-NOW Kommunikation
 
+### PINs
+```
+Motor Output 1: GPIO2
+Motor Output 2: GPIO3
+Input 1:        GPIO4
+Input 2:        GPIO5
+Sleep/Enable:   GPIO6
+```
+
 ### URL
 * https://github.com/EzerLonginus/CH340E_USB_UART
 * https://community.element14.com/technologies/open-source-hardware/b/blog/posts/ch340-building-yet-another-usb-c-to-uart-adapter-board
