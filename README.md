@@ -39,3 +39,4 @@ Sleep/Enable:   GPIO6
 * https://github.com/EzerLonginus/CH340E_USB_UART
 * https://community.element14.com/technologies/open-source-hardware/b/blog/posts/ch340-building-yet-another-usb-c-to-uart-adapter-board
 * https://github.com/SolderedElectronics/USB-UART-CH340C-converter-board-hardware-design
+* https://hci.rwth-aachen.de/lipo
