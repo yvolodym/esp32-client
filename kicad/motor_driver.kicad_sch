@@ -2300,7 +2300,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x4.5"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x3.9"
 			(at 115.2652 85.09 0)
 			(effects
 				(font
